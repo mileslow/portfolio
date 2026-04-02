@@ -1,106 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta
-      name="description"
-      content="Miles Low works on generative AI, accessibility research, and software products."
-    />
-    <meta
-      name="keywords"
-      content="miles low, mileslow, generative ai, accessibility research, product engineering"
-    />
-    <meta name="author" content="Miles Low" />
-    <meta name="robots" content="index,follow" />
 
-    <title>Miles Low</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/ML.png" />
+	<head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
+		<!-- Meta tags -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <body>
-    <main class="site-shell">
-      <div class="site-frame">
-        <section class="story-shell">
-          <div class="story-column">
-            <header class="cli-header">
-              <p class="cli-line">$ whoami</p>
-              <h1>Miles Low</h1>
-              <p class="cli-subline">AI researcher and product engineer.</p>
-            </header>
+		<meta name="description" content="Miles Low's website, biography, education, and previous experience."/>
+		<meta name="keywords" content="mileslow, Miles Low, Miles Low, Miles Low linkedin, Miles Low github, Pioneer Software, miles Low cv, Miles Low portfolio"/>
+		
+		<meta name="author" content="Miles Low" />
+		
+		<!-- Title + Icon -->
+		<title>Miles' Portfolio</title>
+		<link rel="icon" type="image/x-icon" href="assets/img/ML.png">
 
-            <article class="story-block">
-              <p class="cli-line">$ cat researching.txt</p>
-              <h2>researching</h2>
-              <p>
-                I work on generative AI, accessibility research, and systems that stay useful once they leave the demo.
-              </p>
-            </article>
+		<!-- Improve SEO -->
+		<meta name="robots" content="index,follow" />
 
-            <article class="story-block">
-              <p class="cli-line">$ cat studying.txt</p>
-              <h2>studying</h2>
-              <p>
-                I study computer science and economics at the University of Michigan, where most of my interests sit between research, engineering, and product taste.
-              </p>
-            </article>
+		<!-- Styles -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.2.1/css/all.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css">
+		<link rel="stylesheet" href="assets/css/main.css">
 
-            <article class="story-block">
-              <p class="cli-line">$ cat experience.txt</p>
-              <h2>experience</h2>
-              <p>
-                <strong>Founding Engineer, Overlap</strong> — Jun 2024 to present, San Francisco. First hire, YC.
-              </p>
-              <p>
-                <strong>CEO, Pioneer Software</strong> — Aug 2023 to May 2024, Ann Arbor. Built AI solutions for multiple Fortune 500 companies while pursuing school full time.
-              </p>
-              <p>
-                <strong>AI Research Intern, Buoy Studio</strong> — Jun 2023 to Aug 2023, Los Angeles.
-              </p>
-            </article>
+	</head>
 
-            <article class="story-block">
-              <p class="cli-line">$ cat building.txt</p>
-              <h2>building</h2>
-              <p>
-                I like turning vague technical ideas into software that feels calm, rigorous, and obvious to use.
-              </p>
-            </article>
-          </div>
-        </section>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LS62H88490"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
 
-        <footer class="site-footer">
-          <div class="footer-contact">
-            <p>
-              <span class="cli-line">$ contact</span>
-              Want to chat? Reach me at <a href="mailto:mileslow@buoy.studio">mileslow@buoy.studio</a>.
-            </p>
-            <div class="footer-links">
-              <a href="https://www.linkedin.com/in/miles-low-73452a210/" target="_blank" rel="noreferrer">
-                LinkedIn
-              </a>
-              <a href="https://github.com/mileslow" target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-              <a href="https://pioneer.software" target="_blank" rel="noreferrer">
-                Pioneer
-              </a>
-              <a href="https://luncheapp.com" target="_blank" rel="noreferrer">
-                Lunché
-              </a>
-            </div>
-          </div>
-        </footer>
-      </div>
-    </main>
-  </body>
+		gtag('config', 'G-LS62H88490');
+	</script>
+
+	<body>
+
+
+		<!-- Navbar  -->
+		<nav id="top-nav" class="navbar navbar-expand-md navbar-light bg-light flex-md-nowrap flex-wrap">
+			<div class="container justify-content-center">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsingNavbar3">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="navbar-collapse collapse flex-grow-1 justify-content-center" id="collapsingNavbar3">
+					<ul class="navbar-nav mx-auto language" id="navbarList">
+						<li class="nav-item">
+							<a class="nav-link active" id="aboutme" href="#" 
+								data-es="Sobre Mi" 
+								data-en="About Me">
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="education" href="#" 
+								>Research and Academics
+						</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="mowatave" href="https://pioneer.software" target="_blank">Pioneer Software</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="mowatave" href="https://luncheapp.com" target="_blank">Lunché</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link d-none" id="projects" href="#" 
+								data-es="Proyectos" 
+								data-en="Side Projects">
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link d-none" id="conferences" href="#" 
+								data-es="Conferencias" 
+								data-en="Conferences">
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link d-none" id="experience" href="#" 
+								data-es="Experiencia" 
+								data-en="Experience">
+							</a>
+						</li>
+						<!-- TEMPLATE
+						<li class="nav-item">
+							<a class="nav-link" id="name" href="#" data-es="name-es" data-en="name-en"></a>
+						</li>
+						-->
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container" id="main-content">
+			<div class="row content">
+				
+				<!-- Nicolas Meseguer profile and contact info -->
+				<div id="leftPanel" class="col-md-3 language">
+					<div class="row mb-3">
+						<div class="col">
+							<img src="assets/img/miles_bw.JPG" class="rounded me-auto d-block img-fluid profilepicture" alt="Nicolas Meseguer profile picture">
+						</div>
+					</div>
+
+					<h3 class="mb-2">Miles Low</h3>
+
+					<div class="d-none" id="contadorVisitas"></div>
+
+					<p class="mb-4">
+						<span class="t-secondary" 
+						data-en="Honors Computer Science and Economics student at University of Michigan - Ann Arbor / Software Engineer at "></span> <a href="https://buoy.studio/" class="link-dark" target="_blank">Buoy Studio</a>.
+					</p>
+					
+					<div class="row mb-2">
+						<div class="col-1">
+							<i class="fal fa-map-marker-alt" aria-hidden="true"></i>
+						</div>
+						<div class="col-10">			
+							Ann Arbor, MI
+						</div>
+					</div>
+					<div class="row mb-2">
+						<div class="col-1">
+							<i class="fa-regular fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="col-10">
+							<a href="mailto:mileslow@buoy.studio" class="link-dark">mileslow@buoy.studio</a>
+						</div>
+					</div>
+
+					<div class="row mb-2">
+						<div class="col-1">
+							<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+						</div>
+
+						<div class="col-10">
+							<a href="https://www.linkedin.com/in/miles-low-73452a210/" class="link-dark" target="_blank">LinkedIn</a>
+						</div>
+					</div>
+					<div class="row mb-2">
+						<div class="col-1">
+							<i class="fab fa-github" aria-hidden="true"></i>
+						</div>
+
+						<div class="col-10">
+							<a href="https://github.com/mileslow" class="link-dark" target="_blank">GitHub</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- About Me -->
+				<div class="col-md-8 offset-md-1 mb-5 active" id="aboutmeContent">
+					<div class="container">
+						<div class="row language">
+							<h4 id="researchinterestsH4" class="mt-2" >
+								About Me
+							</h4>
+							<p class="mt-2 justify" 
+								>I am a 21-year-old computer science enthusiast hailing from Venice Beach, California, now immersing myself in academia at the University of Michigan. My experience growing up in a locale famed for its dynamic intersection of art and technology has significantly influenced my passion for creating innovative and unique solutions. In the constantly evolving world of technology, I revel in staying at the forefront of new developments. In particular, the emergence of generative AI has captured my interest. Its potential for creating sophisticated, adaptable models and producing dynamic content is simply fascinating, and it's this cutting-edge technology that I enjoy spending my time exploring. Coding for me goes beyond work; it's a creative outlet and a tool to transform abstract thoughts into something powerful. Every line of code acts as a stroke on a canvas, coming together to form an innovative solution never seen before. The thrill of developing new things and venturing into unknown terrains of software design is what drives me, one project at a time. 
+							</p>
+							<h4 id="hobbiesH4" class="mt-2">Interests</h4>
+
+							<div class="container">
+								<div class="row mt-3">
+									<div class="thumbnail col-md-3">
+										<img class="rounded mx-auto d-block img-fluid" src="./assets/img/programming_gen.png" alt="Programming and Math">
+									</div>
+									<div class="col-md-9" id="hobbie1">
+										<b >Programming 👾
+										</b>
+
+										<br />
+										<p class="mt-2 d-inline justify"
+											data-es="Desde pequeño sentí curiosidad por saber cómo se creaban los escenarios (visualmente) de los diferentes videojuegos; cómo los motores gráficos conseguían lo que yo consideraba en aquella época unos 'gráficos increíbles'. Motivado por esto y por mi pasión por la programación, he incluido los ejercicios de"
+											data-en="From piecing together Lego blocks and dabbling in high school robotics to building applications that simplify business processes, my relationship with programming has come a long way. I was introduced to the power and potential of coding during my time with FRC Robotics in high school. This experience paved the way for a deep-seated interest in web and app development. My affection for coding languages, JavaScript, in particular, runs deep.">
+										</p>
+									</div>
+								</div>
+
+								<div class="row mt-5">
+									<div class="thumbnail col-md-3">
+										<img class="rounded mx-auto d-block img-fluid" src="./assets/img/surfing_gen.png" alt="Travelling">
+									</div>
+									<div class="col-md-9" id="hobbie2">
+										<b >Surfing 🏄‍♂️
+										</b>
+
+										<br />
+										<p class="mt-2 d-inline justify"
+											data-es="Desde pequeño sentí curiosidad por saber cómo se creaban los escenarios (visualmente) de los diferentes videojuegos; cómo los motores gráficos conseguían lo que yo consideraba en aquella época unos 'gráficos increíbles'. Motivado por esto y por mi pasión por la programación, he incluido los ejercicios de."
+											data-en="Trapped indoors by the global pandemic and looking for an escape, I turned to the one thing Los Angeles had in abundance - the ocean. I got into surfing and found an unexpected passion. This newfound hobby serves as a peaceful retreat from my daily stresses and a much-needed connection to nature. Although Michigan is far from any surfing opportunities, I eagerly await the times I can return home to ride the Pacific waves.">
+										</p>
+
+									</div>
+								</div>
+								
+								<div class="row mt-5">
+									<div class="thumbnail col-md-3">
+										<img class="rounded mx-auto d-block img-fluid" src="./assets/img/acq_icon.jpg" alt="Content Creator on YouTube">
+									</div>
+									<div class="col-md-9" id="hobbie3">
+										<b >Podcasts 🎙️
+										</b>
+
+										<br />
+										<p class="mt-2 d-inline justify">Podcasts have been an incredible source of learning and inspiration for me. I enjoy a wide range of them, from "Acquired", which gives me insights into tech acquisitions, to "Andrew Huberman" for understanding the science behind the human mind, "How I Built This" for entrepreneurial successes and struggles, and even Duolingo's Spanish podcast to improve my language skills. Each episode fuels my aspirations and arms me with the knowledge I need to walk the trail leading to my dreams.
+										</p>
+										</br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Education -->
+				<div class="col-md-8 offset-md-1 mb-5" id="educationContent">
+					<div class="container">
+						<div class="row mt-2 language">
+							<h2 
+								data-es="Doctorado en Arquitectura de Computadores"
+								data-en="B.S. in Computer Science and Economics (Honors)"></h2>
+							<div class="trnsf-thin" 
+								data-es="(Universidad de Murcia, 2022-2026)" 
+								data-en="(University of Michigan -- Ann Arbor, 2021-2025)"></div>
+
+							<p class="mt-1 justify"
+								data-es="
+								El diseño del sistema de memoria es un componente clave de cualquier arquitectura, y mucho más crucial en las arquitecturas heterogéneas, que están surgiendo como resultado de la ralentización de la Ley de Moore.
+
+								Aunque las jerarquías de memoria en las arquitecturas de propósito general se han explorado ampliamente a lo largo de los años, los aceleradores de dominio específico tienen restricciones que introducen variaciones en algunas características esenciales. Además, a medida que la capacidad de cálculo de estas arquitecturas heterogéneas crece, también lo hace la necesidad de poder recuperar datos con los que operar, lo que aumenta la presión sobre el diseño del sistema de memoria.
+
+								El objetivo general de este trabajo es sugerir enfoques para abordar dos preocupaciones trascendentales en el diseño del sistema de memoria de un procesador heterogéneo. Por un lado, organizaciones novedosas para las estructuras de memoria empleadas por los núcleos (considerando los aceleradores de deep learning en este caso), a través de las cuales se podrá responder a la exigencia de un ancho de banda cada vez mayor. Por otro lado, investigaremos alternativas a los conceptos actuales de memoria virtual para compartir de forma más eficiente el mismo espacio de memoria entre los núcleos de propósito general y los aceleradores.
+								"
+
+								data-en="
+								As a student at the University of Michigan, I am currently serving as the Vice President of Finance in Alpha Phi Omega, a renowned community service organization. I manage finances that support our community initiatives. I am also an active participant in the Optimize Core Team, Michigan's premiere social impact accelerator, where we bring change-making ideas from prototype to launch. My technical capabilities are further sharpened through my role in the Michigan Hackers Machine Learning Sub-team, where we implement machine learning techniques into real-world projects, thus bridging the gap between theoretical concepts and practical applications. My course load includes key subjects like Data Structure and Algorithms, Computer Organization, Economics of Entrepreneurship, and Advanced Macroeconomics. One of the most impactful classes I am taking is Public Health 250, taught by the remarkable Victor Stretcher. His teachings on the importance of life purpose have deeply influenced my academic and personal pathways, serving as a reminder of the connection between our personal endeavors and a greater sense of purpose.
+
+								">
+								
+							</p>
+
+		
+
+						</div>
+
+						
+						<div class="row mt-3 language">
+							<h2 
+								> Accessibility Research
+							</h2>
+							<div class="trnsf-thin" 
+								data-es="(Univerisdad Católica de Murcia, 2019-2020) - 12 ECTS" 
+								><span>Accessibility Lab - University of Michigan<br/>Under supervision by Assistant Professor Dhruv Jain</span></div>
+						
+
+							<p class="mt-1 justify" 
+								data-es="
+								Introducción a Machine Learning (ML) y a las nociones que sustentan el cálculo de diferentes modelos de Deep Neural Networks (DNNs), como MLPs, CNNs o RNNs.
+								Durante mi estancia de prácticas, desarrollé una red neuronal completamente conectada (FC) y una convolucional (CNN) en C, mejorando la eficiencia de la caché (memoria dinámica, punteros, registros de memoria) y las operaciones matriciales para acelerar el cálculo. 
+								Esta aplicación se distribuye abiertamente a la comunidad científica; es totalmente modular y fácil de usar.
+								"
+
+								data-en="
+								As a key member of the University of Michigan's Sound Customization in VR for Deaf and Hard-of-Hearing (DHH) People project, I contributed significantly to various facets of this innovative initiative. My tasks involved creating a robust user study curriculum, enabling a comprehensive assessment of our VR features designed for DHH users. Essential to this was my role in recruiting skilled Unity developers for the SoundCusVR Developer Study, leveraging my networking abilities and knowledge. On the technical front, I was responsible for debugging our Unity software, ensuring its functionality and reliability for our participants. In addition, I maintained comprehensive project documentation, promoting transparency and ease of understanding for fellow developers. Overall, my role encompassed research, developer relationship management, software debugging, and technical writing, proving integral to the project's success.
+
+
+								">
+							</p>
+
+							<div class="trnsf-thin">
+								<span
+									>[You can view the paper 	
+								</span>
+								<a href="https://drive.google.com/file/d/1xDxvPp9s_TU7gBqHi-lNakNauRmIg2sg/view?usp=sharing" class="link-dark" target="_blank" 
+									data-es="aquí]"
+									data-en="here]">
+								</a>
+							</div>
+
+						</div>
+
+						
+					</div>
+				</div>
+
+
+			
+
+				<!-- Clases particulares -->
+				<div class="col-md-12 mb-5" id="particularContent">
+					<div class="container language">
+						<h1 class="particular-h1 mb-3" data-es="La calidad siempre es prioritaria." data-en="Quality always goes first."></h1>
+						
+						<h4 class="particular-clickable">🧑 <span class="particular-h4"><span data-es="¿Quién es " data-en="Who's "></span><span class="particular-name">Nicolás Meseguer</span>?</span></h4>
+						<div class="container">
+							<div class="row mb-4 align-middle align-items-center">
+								<div class="col-sm-0 col-md-4 col-lg-3">
+									<div>
+										<img src="assets/img/NicolasMeseguer.webp" alt="Nicolás Meseguer" class="profilepicture-particular w-75 d-block">
+									</div>
+								</div>
+								<div class="col-md-8">
+									👋 ¡Hola a todos! A mis 25 años puedo afirmar rotúndamente que soy un apasionado de la informática y la enseñanza. He estado inmerso en el fascinante mundo de la tecnología desde que era un niño y desde entonces, he recorrido un largo camino académico y profesional.<br><br> Mi viaje comenzó con un Grado Superior en Desarrollo Web, seguido de un Grado en Ingeniería Informática en la UCAM, y luego un Máster en Nuevas Tecnologías en Informática en la Universidad de Murcia.<br><br> Actualmente, estoy trabajando en mi doctorado, mientras tengo el privilegio de dar clases en la Universidad de Murcia.
+								</div>
+							</div>
+							<div>
+								En mi experiencia docente, he encontrado que cada estudiante es único y merece un <span class="underline">enfoque de enseñanza personalizado</span> que se ajuste a sus propias necesidades y ritmo de aprendizaje. Por ello, mi objetivo principal es brindar una enseñanza de calidad y adaptada a cada uno de mis alumnos, con posibilidad de <span class="underline">enseñanza en Inglés y Castellano</span>. Estos son algunos de mis enfoques de enseñanza:
+								<br><br>
+								<ol>
+									<li><b>Apoyo constante</b>: Estoy disponible para resolver dudas o proporcionar ayuda adicional cuando sea necesario. Creo que la comunicación abierta y regular es clave para un aprendizaje efectivo. 📞</li>
+									<li><b>Herramientas innovadoras</b>: Utilizo herramientas de última generación para facilitar el aprendizaje y hacer que incluso los conceptos más complejos sean comprensibles. Uso de tabletas para ilustrar ideas, software colaborativo para trabajar en tiempo real, o proporcionar materiales de estudio personalizados. 💻📚</li>
+									<li><b>Paciencia y comprensión</b>: Entiendo que todos aprendemos a nuestro propio ritmo. Por lo tanto, mi enfoque es siempre paciente y alentador, asegurándome de que cada concepto se comprenda completamente antes de pasar al siguiente. 🤗</li>
+								</ol>
+							</div>
+						</div>
+
+						<h4 class="particular-clickable">💼 <span class="particular-h4" data-es="Experiencia previa" data-en="Previous experience"></span></h4>
+						<div>
+							<p>
+								Siempre he sido un apasionado de la informática. Mi historia con los ordenadores y la programación comenzó desde muy pequeño pero se puso en serio cuando me lancé a estudiar un <span class="underline">Grado Superior</span> de Desarrollo Web. No solo me encantó, sino que obtuve unas notas estupendas. Esto me abrió las puertas a una beca Erasmus+ para hacer prácticas en el extranjero. ¡Y sí, resulta que además de hablar informática, también hablo inglés bastante bien! 😂
+								<br><br>
+
+								Después de aquella experiencia, me sumergí en el <span class="underline">Grado en Ingeniería Informática</span> en la Universidad Católica San Antonio de Murcia (UCAM). Fueron años intensos y fascinantes en los que me llevé la sorpresa de mi vida al terminar con una media de 9.3 y, para mi asombro, ¡recibir el premio al mejor expediente de mi promoción! 🤯 (+26 matrículas de honor).
+								<br><br>
+								
+								Pero mi amor por la informática y la curiosidad por seguir aprendiendo no conocían límites, así que me lancé a por un <span class="underline">Máster en Nuevas Tecnologías en Informática</span> en la Universidad de Murcia. Durante este tiempo, tuve la suerte de trabajar codo con codo con el Barcelona Supercomputing Center (BSC) en mi Trabajo de Fin de Máster, que acabó con una calificación de 9.9. Durante esos años, también tuve la oportunidad de compartir mi pasión por la informática a través de dos artículos que publiqué en congresos nacionales.
+								<br><br>
+								
+								Hoy, gracias a una beca de la prestigiosa Fundación Séneca (¡y estoy muy orgulloso de ser uno de los cuatro seleccionados en toda la región!), estoy metido de lleno en mis <span class="underline">estudios de doctorado</span>. Y para redondear esta aventura, también tengo la increíble oportunidad de dar clases en la Universidad de Murcia, donde este año soy el profesor encargado de las prácticas de la asignatura Arquitecturas Multinúcleo y de Propósito Específico (AMPE). ¡Así que aquí estoy, listo para compartir todo lo que he aprendido en mi camino!
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">🎓 <span class="particular-h4" data-es="Especializaciones y cursos" data-en="Specializations and courses"></span></h4>
+						<div>
+							<p>
+								Con mi amplia formación y experiencia, puedo ayudar a estudiantes de todas las edades y niveles, desde la primaria hasta la universidad. Aquí tienes una idea de las áreas en las que me especializo:
+
+								<ol>
+									<li><b>Informática básica</b>: Desde cómo utilizar un ordenador, navegación por internet, hasta seguridad informática básica, puedo ayudar a los más jóvenes a familiarizarse y desenvolverse en el mundo digital. 🖥️</li>
+									<li><b>Programación y desarrollo web</b>: ¿Estás interesado en aprender a programar o a crear tu propia página web? Puedo enseñar desde los fundamentos de la programación hasta los lenguajes más avanzados, y orientar en el diseño y desarrollo de sitios web. 💻🌐</li>
+									<li><b>Asignaturas universitarias de informática</b>: Si estás cursando un Grado o Máster en Informática y necesitas ayuda extra, puedo ofrecer soporte en asignaturas de computación, arquitectura, sistemas operativos, entre otras. 🎓🔬</li>
+									<li><b>Inglés Técnico</b>: Gracias a mi experiencia estudiando y trabajando en el extranjero, puedo ayudarte a mejorar tu inglés técnico y académico, una habilidad esencial en el mundo de la informática y la tecnología. 🌍🗣️</li>
+								</ol>
+
+								Mi enfoque es siempre adaptar las lecciones a las necesidades específicas de cada estudiante. Así que <span class="underline">si tienes una solicitud especial, no dudes en comunicarte conmigo</span>, estaré encantado de atender tus necesidades o las de tu hijo. 🤝
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">📚 <span class="particular-h4" data-es="Material didáctico" data-en="Educational materials"></span></h4>
+						<div>
+							<p>
+								Una de las cosas que realmente diferencia mis clases de las de otras academias o profesores particulares es el enfoque práctico y colaborativo que utilizo. Para asegurarme de que mis alumnos realmente comprendan y apliquen lo que aprenden, hago uso de una variedad de herramientas didácticas y tecnológicas:
+								
+								<ol>
+									<li><b>Tableta e iPad</b>: Utilizo mi tableta y iPad para dibujar y explicar conceptos en tiempo real durante las clases. Esto significa que tendrás una explicación visual clara de lo que estoy enseñando, lo que facilitará la comprensión y retención. 🎨📱</li>
+									<li><b>Programas de dibujo</b>: Domino una serie de programas de dibujo que me permiten ilustrar ideas y conceptos de una manera fácil de entender. Así, los alumnos pueden visualizar exactamente lo que estamos discutiendo y cómo se aplica. 🖌️💡</li>
+									<li><b>Herramientas colaborativas</b>: Utilizo herramientas como Miro y Draw.io, que permiten a los alumnos participar y colaborar en tiempo real. Esto significa que no solo verán lo que hago, sino que también tendrán la oportunidad de participar proactivamente y aprender haciendo. 🔄🎲</li>
+								</ol>
+
+								El uso de estas herramientas modernas y colaborativas permite a los alumnos experimentar un aprendizaje interactivo y atractivo que no solo los ayudará a entender los conceptos, sino que también les dará las habilidades prácticas que necesitarán en el mundo real.
+								<br><br>
+								¡El objetivo siempre es proporcionar una enseñanza de la más alta calidad y hacer del aprendizaje una experiencia agradable y valiosa! 🌟🚀
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">💰 <span class="particular-h4" data-es="Precio hora" data-en="Price per hour"></span></h4>
+						<div>
+							<p>
+								Entiendo que la calidad de la educación es una inversión importante para el futuro. Mi enfoque siempre ha sido proporcionar un servicio excepcional que supere las expectativas y justifique cada euro invertido.
+								<br><br>
+
+								El precio establecido es de <b>20 euros/hora</b>. Este precio refleja la calidad de la enseñanza que ofrezco, incluyendo mi amplia experiencia, mi enfoque personalizado y la utilización de herramientas de aprendizaje interactivas y modernas.
+								<br><br>
+
+								Para mayor comodidad, acepto varios métodos de pago, incluyendo <span class="underline">Bizum</span>, <span class="underline">Transferencia Bancaria</span> y <span class="underline">PayPal</span>. Quiero hacer que el proceso sea lo más sencillo y sin complicaciones posible para ti.
+								<br><br>
+
+								Al final, no solo estás pagando por un tutor, sino por una experiencia educativa de alta calidad, una que te brindará de las herramientas y la confianza que necesita para tener éxito en tu carrera académica y/o profesional. 🎯💎
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">❓ <span class="particular-h4" data-es="Preguntas Frecuentes" data-en="FAQ"></span></h4>
+						<div>
+							<p>
+								<ol>
+									<li><b>¿Se puede adaptar al horario de mi hijo?</b>: Sé lo ocupadas que pueden llegar a ser las vidas de los estudiantes, por lo que ofrezco un horario flexible y adaptable a tus necesidades. ⏰🔄</li>
+									<li><b>Si una clase se cancela, ¿qué pasa?</b>: Entiendo que los imprevistos pueden surgir. Si necesitas cancelar una clase, buscaremos juntos otro horario que se acomode. La meta siempre es no perder la oportunidad de aprender y crecer. 🔄📅</li>
+									<li><b>¿Qué métodos de pago aceptas?</b>: Para hacer que el proceso sea lo más conveniente posible, acepto varios métodos de pago, incluyendo Bizum, transferencia bancaria y PayPal. 💰💳</li>
+									<li><b>¿Qué garantiza que la enseñanza será de alta calidad?</b>: Mi experiencia académica y profesional hablan por sí mismas. Además, me dedico a usar herramientas y técnicas de enseñanza modernas y efectivas para asegurar el mejor aprendizaje posible. 🎯🌟</li>
+								</ol>
+
+								Si tienes alguna otra pregunta que no haya sido respondida aquí, por favor no dudes en ponerte en contacto conmigo. Estoy aquí para ayudarte y asegurarme de que recibas la mejor educación posible. 🤝💡
+							</p>
+						</div>
+
+						<h4 class="particular-clickable">📞 <span class="particular-h4" data-es="Contacto" data-en="Contact"></span></h4>
+						<div>
+							<p>
+								¡Si tienes alguna pregunta, necesitas más información, o te gustaría programar una clase inicial, no dudes en ponerte en contacto conmigo!
+								<br><br>
+								
+								Puedes enviarme un mensaje a mi dirección de correo electrónico de trabajo: 📧 <a href="mailto:n.mesegueriborra@um.es" class="link-dark">n.mesegueriborra@um.es</a>.
+								<br><br>
+
+								Si prefieres usar WhatsApp, también puedes enviarme un mensaje al siguiente número: <span class="underline">+34 ??? ?? ?? ??</span>. Por favor, ten en cuenta que este número sólo está disponible para mensajes de WhatsApp. 📱
+							</p>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Conferences -->
+				<div class="col-md-8 offset-md-1 mb-5" id="conferencesContent">
+					<div class="container language">
+						⚠️ 
+						<span 
+							data-es="Estamos trabajando en ello..."
+							data-en="Work in progress...">
+						</span>
+						⏱️
+						</div>
+				</div>
+
+				<!-- Experience -->
+				<div class="col-md-8 offset-md-1" id="experienceContent">
+					<div class="container language">
+						⚠️ 
+						<span 
+							data-es="Estamos trabajando en ello..."
+							data-en="Work in progress...">
+						</span>
+						⏱️
+						</div>
+				</div>
+
+				<!-- Projects -->
+				<div class="col-md-8 offset-md-1" id="projectsContent">
+					<div class="container language">
+						⚠️ 
+						<span 
+							data-es="Estamos trabajando en ello..."
+							data-en="Work in progress...">
+						</span>
+						⏱️
+						</div>
+				</div>
+
+				<!-- Template -->
+				<!--
+				<div class="col-md-8 offset-md-1" id="nameContent">
+					<div class="container language">
+					⚠️ 
+					<span 
+						data-es="Estamos trabajando en ello..."
+						data-en="Work in progress...">
+					</span>
+					⏱️
+					</div>
+				</div>
+				-->
+
+
+			</div>
+		</div>
+
+
+		<!-- Scripts -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+
 </html>

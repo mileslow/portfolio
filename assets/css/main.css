@@ -1,225 +1,311 @@
-:root {
-  --bg: #050505;
-  --panel: #0b0b0b;
-  --ink: #f3f3ef;
-  --muted: #a1a19a;
-  --line: rgba(255, 255, 255, 0.1);
-  --accent: #8df7a3;
+/* MOBILE's FIRST - Custom properties */
+/* This classes will be then modified for bigger screens */
+
+#mowatave {
+	color: #2bd284 !important;
+	text-decoration: underline;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  margin: 0;
-  min-height: 100%;
-}
-
-body {
-  font-family: "IBM Plex Mono", monospace;
-  background: var(--bg);
-  color: var(--ink);
+.underline {
+	text-decoration: underline;
 }
 
 a {
-  color: var(--ink);
-  text-decoration: none;
+	text-decoration-thickness: 1px;
 }
 
-a:hover,
-a:focus-visible {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 0.18em;
+#hobbiesH4 {
+	text-align: center;
 }
 
-p,
-h1,
-h2 {
-  margin: 0;
+#hobbie1, #hobbie2, #hobbie3 {
+	text-align: center;
+	margin-top: 1em;
 }
 
-.site-shell {
-  min-height: 100vh;
-  background:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    var(--bg);
-  background-size: 24px 24px, 24px 24px, auto;
+.abme-honors-bullet{
+	font-size: 16px;
 }
 
-.site-frame {
-  width: min(100%, 900px);
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 32px 20px 48px;
-  display: flex;
-  flex-direction: column;
+/* GENERAL CSS */
+#main-content {
+	margin-top: 20px;
 }
 
-.story-shell {
-  flex: 1;
-  display: flex;
-  align-items: center;
+li > .active {
+	font-weight: 500;
 }
 
-.story-column {
-  width: 100%;
-  display: grid;
-  gap: 24px;
+.trnsf-thin {
+	font-weight: 300;
 }
 
-.cli-header,
-.story-block,
-.site-footer {
-  width: 100%;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.01);
+.trnsf-italic {
+	font-style: italic;
 }
 
-.cli-header,
-.story-block {
-  padding: 18px 18px 20px;
+.justify {
+	text-align: justify;
+  	text-justify: inter-word;
 }
 
-.cli-line {
-  color: var(--accent);
-  font-size: 0.82rem;
-  margin-bottom: 12px;
+.lucida-console {
+	font-family: 'Lucida Console', monospace;
 }
 
-.cli-header h1 {
-  font-size: clamp(2rem, 8vw, 4rem);
-  line-height: 0.92;
-  letter-spacing: -0.05em;
-  margin-bottom: 12px;
+/* NICOLAS MESEGUER CONTACT INFO - Related*/
+.profilepicture {
+	max-height: 300px;
+	min-width: 150px;
+	min-height: 150px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.cli-subline,
-.story-block p,
-.footer-contact p {
-  color: var(--muted);
-  line-height: 1.9;
-  font-size: 0.98rem;
+.fseneca {
+	max-width: 50%; 
+	height: auto;
 }
 
-.story-block h2 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: var(--ink);
+.fseneca:hover {
+	transform: scale(1.05,1.05);
 }
 
-.site-footer {
-  margin-top: 24px;
-  padding: 18px;
+/* PUBLICATIONS - Related */
+.pub-block {
+	border-left: 2px #D9DDDC solid;
+	padding-left: 15px;
 }
 
-.footer-contact {
-  display: grid;
-  gap: 14px;
+.pub-year-h2 {
+	font-size: 3.2em;
+	font-weight: 100;
 }
 
-.footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 18px;
+.pub-authors {
+	font-weight: 400;
 }
 
-.footer-links a::before {
-  content: "> ";
-  color: var(--accent);
+.pub-authors .pub-author {
+	font-weight: 500;
 }
 
+.pub-congress {
+	font-weight: 100;
+}
+
+.pub-force-margin-left {
+	margin-left: 10px !important;
+}
+
+/* ACADEMIC - Related */
+.academic-year-h2, .student-h2 {
+	font-size: 3.2em;
+	font-weight: 100;
+}
+
+.academic-block, .student-block {
+	padding-left: 15px;
+}
+
+.academic-rol {
+	font-weight: 400;
+}
+
+.academic-year {
+	font-weight: 100;
+}
+
+.student-mark {
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.student-period {
+	font-weight: 100;
+}
+
+/* OPTION BUTTON */
+.options-button {
+    position: fixed;
+	
+    height: 50px;
+    width: 50px;
+	cursor: pointer;
+
+    border-radius: 100%;
+	
+	bottom: 25px;
+	right: 25px;
+
+	display: inline-block;
+
+	font-size: 1.2em;
+	vertical-align: middle;
+	text-align: center;
+
+	padding-top: .35em;
+}
+
+.options-button i, img {
+	margin: auto;
+	z-index: -999;
+}
+
+#options-toggler {
+	transition: .2s;
+}
+
+#options-toggler:hover {
+	transform: scale(1.09,1.09);
+}
+
+#theme {
+	height: 40px;
+    width: 40px;
+
+	bottom: 85px !important;
+	right: 30px !important;
+
+	font-size: 1em;
+
+	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
+    transition: background-color .5s; /* For modern browsers */
+}
+
+#lan {
+	height: 40px;
+    width: 40px;
+
+	bottom: 130px;
+	right: 30px;
+
+	font-size: 1em;
+
+	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
+    transition: background-color .5s; /* For modern browsers */
+}
+
+.lang-flag {
+	height: 15px;
+    width: 22.5px;
+	vertical-align:	0px;
+}
+
+/* BLOG - Related */
+.blog-info {
+	font-weight: 100;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+
+.blog-short {
+	font-weight: 400;
+	font-size: 17px;
+}
+
+.blog-tags {
+	text-align: right;
+}
+
+.blog-tags > .tag {
+	border-radius: 100px;
+	padding: 4px;
+	font-size: 12px;
+	font-weight: 600;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+	color: white;
+}
+
+.blog-tags > .t-purple {
+	background-color: rgb(137, 70, 255, 0.8);
+}
+
+.blog-tags > .t-lime {
+	background-color: rgba(118, 185, 0, 0.8);
+}
+
+.blog-tags > .t-sky {
+	background-color: rgba(37, 197, 223, 0.8);
+}
+
+.clickable {
+	border-radius: 20px;
+	border: 2px #D9DDDC solid;
+	padding: 15px;
+	cursor: pointer;
+	transition: .3s;
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+}
+
+.clickable:hover {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+	transform: scale(1.03,1.03);
+}
+
+/* CLASES PARTICULARES */
+.particular-h1 {
+	font-style: italic;
+	font-weight: 400;
+	padding: 0.2em 0.2em 0.2em 1em;
+	border-left: 5px #3fa5e9 solid;
+	background-color: rgba(137, 188, 230, 0.2);
+}
+
+.particular-h4 {
+	font-weight: 400;
+}
+
+#particularContent  p {
+	margin-top: 1em;
+}
+
+.particular-name {
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.particular-clickable {
+	margin-bottom: 0.6em;
+	padding: 0.3em;
+	cursor: pointer;
+	
+	border-radius: 15px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+.particular-clickable:hover {
+	transform: scale(1.02,1.02);
+	transition: 0.4s;
+}
+
+.profilepicture-particular {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+	box-shadow: 0px 3px 10px rgba(0,0,0,0.4);
+}
+
+/* MEDIA QUERIES */
+/* BIGGER SCREENS */
 @media (min-width: 768px) {
-  .site-frame {
-    padding: 48px 32px 56px;
-  }
 
-  .story-column {
-    gap: 28px;
-  }
+	#hobbiesH4 {
+		text-align: left;
+	}
 
-  .cli-header,
-  .story-block {
-    padding: 22px 24px 24px;
-  }
+	#hobbie1, #hobbie2, #hobbie3 {
+		text-align: left;
+		margin-top: 0;
+	}
 
-  .site-footer {
-    padding: 22px 24px;
-  }
-}
-
-@media (max-width: 767px) {
-  .site-frame {
-    width: 100%;
-    padding: 14px 12px 24px;
-  }
-
-  .story-shell {
-    align-items: flex-start;
-  }
-
-  .story-column {
-    gap: 12px;
-  }
-
-  .cli-header,
-  .story-block,
-  .site-footer {
-    border-left: none;
-    border-right: none;
-    border-radius: 0;
-  }
-
-  .cli-header,
-  .story-block {
-    padding: 14px 8px 16px;
-  }
-
-  .site-footer {
-    margin-top: 12px;
-    padding: 14px 8px 18px;
-  }
-
-  .cli-line {
-    font-size: 0.76rem;
-    margin-bottom: 10px;
-  }
-
-  .cli-header h1 {
-    font-size: 2.35rem;
-    margin-bottom: 10px;
-  }
-
-  .cli-subline,
-  .story-block p,
-  .footer-contact p {
-    font-size: 0.92rem;
-    line-height: 1.75;
-  }
-
-  .story-block h2 {
-    font-size: 0.95rem;
-    margin-bottom: 8px;
-  }
-
-  .footer-contact {
-    gap: 12px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .site-frame {
-    width: min(100%, 980px);
-    padding: 56px 40px 64px;
-  }
+	.profilepicture {
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	
+	.abme-honors-bullet{
+		margin-left: 40px;
+	}
 }

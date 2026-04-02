@@ -18,7 +18,12 @@ $(".particular-clickable").next().hide();
 $(".particular-clickable").next()[0].style.display = "block";
 
 $(document).ready(function () {
-  $("#contadorVisitas").text("");
+  $.getJSON(
+    "https://api.countapi.xyz/hit/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a",
+    function (response) {
+      $("#contadorVisitas").text(response.value);
+    }
+  );
 
   // First time, check the theme
   if (localStorage.getItem("theme") === null) {
@@ -48,7 +53,7 @@ $(document).ready(function () {
       rel: "stylesheet",
       href: "assets/css/dark.css",
     });
-    $("#theme").empty().append("<i class='fa-solid fa-moon'></i>");
+    $("#theme").empty().append("<i class='fa-duotone fa-lightbulb-slash'></i>");
   }
   // Done because light is the one by default
   if (localStorage.lan == "es") {
@@ -283,7 +288,7 @@ $(document).ready(function () {
     if (localStorage.theme != "dark") {
       $("#theme")
         .empty()
-        .append("<i class='fa-solid fa-moon'></i>");
+        .append("<i class='fa-duotone fa-lightbulb-slash'></i>");
 
       localStorage.theme = "dark";
 
@@ -294,7 +299,7 @@ $(document).ready(function () {
         href: "assets/css/dark.css",
       });
     } else {
-      $("#theme").empty().append("<i class='fa-solid fa-sun'></i>");
+      $("#theme").empty().append("<i class='fa-duotone fa-lightbulb'></i>");
 
       localStorage.theme = "light";
 
@@ -375,5 +380,10 @@ function scrollToContent(divId) {
 }
 
 function resetViews() {
-  $("#contadorVisitas").text("0");
+  $.getJSON(
+    "https://api.countapi.xyz/set/nicolasmeseguer.github.io/634c2142-b35d-430e-b51c-dad16880dd3a?value=0",
+    function (response) {
+      $("#contadorVisitas").text("0");
+    }
+  );
 }

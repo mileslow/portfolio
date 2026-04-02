@@ -1,30 +1,71 @@
 :root {
-	--text-primary: #0f1722;
-	--text-secondary: #4f5d6f;
-	--text-dim: #7a8797;
-	--bg-color: #f5f7fb;
-	--bg-muted: #edf2f8;
-	--bg-glow: rgba(91, 141, 255, 0.14);
-	--nav-bg: rgba(245, 247, 251, 0.82);
-	--surface-card: rgba(255, 255, 255, 0.82);
-	--surface-soft: rgba(247, 250, 253, 0.92);
-	--border-subtle: rgba(130, 148, 172, 0.22);
-	--grid-line: rgba(130, 148, 172, 0.08);
-	--accent-strong: #155eef;
-	--accent-wash: rgba(21, 94, 239, 0.18);
-	--tag-bg: rgba(21, 94, 239, 0.1);
-	--shadow-soft: 0 22px 60px rgba(15, 23, 34, 0.08);
+	--t-color: #000;
+
+	--bg-color: #fff;
 }
 
 body {
 	background-color: var(--bg-color);
-	color: var(--text-primary);
+	color: var(--t-color);
 }
 
-.navbar-toggler {
-	border-color: var(--border-subtle);
+h1, h2, h3, h4, b {
+	color: var(--t-color) !important;
 }
 
-.navbar-toggler:focus {
-	box-shadow: 0 0 0 0.2rem rgba(21, 94, 239, 0.15);
+#top-nav {
+	background-color:rgb(248, 249, 250) !important;
+}
+
+.nav-link {
+	color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.nav-link:hover{
+	color: rgba(0, 0, 0, 0.7) !important;
+}
+
+.t-secondary { 
+	color: rgb(108,117,125);
+}
+
+.link-dark {
+	color: #212529 !important;
+}
+
+.link-dark:hover {
+	color: #1c1e20 !important;
+}
+
+/* OPTION BUTTON */
+.options-button {
+	background-color: var(--bg-color);
+	border: 1px solid #000;
+}
+
+#options-toggler {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+}
+
+#options-toggler:hover {
+	box-shadow: 0px 3px 50px rgba(0,0,0,0.3);
+}
+
+#theme:hover, #lan:hover {
+	background-color: #d3d3d3;
+}
+
+/* BLOG - Related */
+
+.blog-short {
+	color: #717378;
+}
+
+/* TEACHING RELATED */
+.academic-name {
+	color: #22517d;
+}
+
+.academic-block {
+	border-left: 2px #22517d solid;
 }
