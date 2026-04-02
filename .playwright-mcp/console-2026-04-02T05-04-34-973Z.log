@@ -1,0 +1,3 @@
+[    5831ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:8000/src/styles.css?t=1775106250897:0
+[   28180ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:8000/node_modules/.vite/deps/react-dom_client.js?v=1cd94e85:21548
+[34936693ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:8000/@vite/client:559
